@@ -50,6 +50,8 @@ def select_tesis_and_saha(driver, tesis, saha):
 
     close_modal_if_exists(driver)
 
+    #burda sorun çekiyorum sahayı bazen seçmiyor zorlama kullanmış oldum.
+
     find_and_click(driver, "/html/body/form/div[3]/div[3]/div[1]/div/div/div/div/div[3]/span[2]/span[1]/span")
     enter_text_and_submit(driver, "/html/body/span/span/span[1]/input", saha)
     
