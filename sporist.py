@@ -50,7 +50,7 @@ def select_tesis_and_saha(driver, tesis, saha):
 
     close_modal_if_exists(driver)
 
-    #burda sorun çekiyorum sahayı bazen seçmiyor zorlama kullanmış oldum.
+    #burda sorun çekiyorum sahayı bazen seçmiyor zorlama kullanmış oldum!!!
 
     find_and_click(driver, "/html/body/form/div[3]/div[3]/div[1]/div/div/div/div/div[3]/span[2]/span[1]/span")
     enter_text_and_submit(driver, "/html/body/span/span/span[1]/input", saha)
@@ -86,7 +86,7 @@ def make_reservations(driver):
     for day in days:
         if found:
             break
-
+        #sabah saatlerini seçmemesi için örn 21:00 21:30 ile başlayan saatleri alabilmek için 
         time_slots = day.find_elements(By.XPATH, ".//span[contains(text(), '22:') or contains(text(), '21:') or contains(text(), '20:') or contains(text(), '19:')]")
 
         
