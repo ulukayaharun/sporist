@@ -108,5 +108,5 @@ def make_reservations(driver):
                 continue
 
 # Kodunuzu çalıştırmak için:
-run("14099433250", "59214860", "MALTEPE SAHİL SPOR TESİSİ", "HALI SAHA 2")
+run("TC Kimlik NO", "Şifre", "MALTEPE SAHİL SPOR TESİSİ", "HALI SAHA 2")
 
